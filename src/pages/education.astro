@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import Button from "../components/Button.astro"
+import CTA from "../components/CTA.astro"
 ---
 
 <Layout title="Education" description="Messianic education">
@@ -18,13 +20,13 @@ import Layout from "../layouts/Layout.astro"
         <section>
             <div class="columns-2 text-lg">
                 <div>
-                    <div class="cta">
+                    <CTA>
                         <h2>Memory Club</h2>
                         <p>Memory Club is XYZ</p>
-                    </div>
+                    </CTA>
                 </div>
                 <div>
-                    <div class="cta">
+                    <CTA>
                         <h2>Torah-Integrated Learning</h2>
                         <p>
                             <em
@@ -34,35 +36,31 @@ import Layout from "../layouts/Layout.astro"
                                 ></em
                             >
                         </p>
-                    </div>
+                    </CTA>
                 </div>
             </div>
         </section>
         <section>
             <div class="columns-2 text-lg">
                 <div>
-                    <div class="cta">
+                    <CTA>
                         <h2>Pinguni</h2>
                         <p>Something</p>
-                        <a
-                            class="button"
+                        <Button
                             href="https://pinguni.org"
-                            target="_blank"
-                            rel="noopener noreferrer">Visit Pinguni</a
-                        >
-                    </div>
+                            text="Visit Pinguni"
+                        />
+                    </CTA>
                 </div>
                 <div>
-                    <div class="cta">
+                    <CTA>
                         <h2>DCLH</h2>
                         <p>Something</p>
-                        <a
-                            class="button"
+                        <Button
                             href="https://dclearninghub.com"
-                            target="_blank"
-                            rel="noopener noreferrer">Visit DCLH</a
-                        >
-                    </div>
+                            text="Visit DCLH"
+                        />
+                    </CTA>
                 </div>
             </div>
         </section>

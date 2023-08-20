@@ -1,0 +1,13 @@
+---
+interface Props {
+    href?: string
+    target?: string
+    text: string
+}
+
+const { href = "#!", target = "_blank", text } = Astro.props
+---
+
+<a class="button" href={href} target={target} rel="noopener noreferrer">
+    {text}
+</a>
