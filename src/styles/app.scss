@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "components/buttons";
+@import "components/cards";
+@import "components/columns";
+@import "components/cta";
+@import "components/footer";
+@import "components/hero";
+@import "components/navbar";
+
+.sections {
+    @apply space-y-28 py-20;
+
+    section {
+        @apply py-0;
+    }
+}
+section {
+    @apply py-20 px-20;
+}
+@media (max-width: theme("screens.sm")) {
+    .sections {
+        @apply space-y-16 py-12;
+    }
+    section {
+        @apply py-10 px-6;
+    }
+}
+
+// ==========================================
+// Typography
+// ==========================================
+
+h1 {
+    @apply text-5xl leading-relaxed mb-8;
+}
+h2 {
+    @apply text-4xl leading-relaxed mb-8;
+}
+@media (max-width: theme("screens.sm")) {
+    h1 {
+        @apply text-3xl leading-relaxed mb-6;
+    }
+    h2 {
+        @apply text-2xl leading-relaxed mb-6;
+    }
+}
+
+p {
+    &.title {
+        @apply font-semibold mb-2;
+    }
+}

@@ -1,0 +1,29 @@
+.cards {
+    .card {
+        @apply block rounded-lg bg-slate-100 duration-300 py-6 px-6;
+
+        &:hover {
+            @apply bg-slate-200;
+        }
+
+        .eyebrow,
+        .tags {
+            @apply text-sm uppercase;
+        }
+
+        h3 {
+            @apply font-semibold text-xl my-1;
+        }
+
+        .tags {
+            @apply mt-6 space-y-1;
+
+            .tag {
+                @apply flex;
+                p {
+                    @apply w-1/2;
+                }
+            }
+        }
+    }
+}

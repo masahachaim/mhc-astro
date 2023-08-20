@@ -1,0 +1,31 @@
+.hero {
+    @apply py-20 px-20 bg-slate-50 flex items-center space-x-12;
+
+    p {
+        @apply text-lg;
+    }
+
+    img {
+        @apply w-full;
+    }
+}
+
+@media (max-width: theme("screens.md")) {
+    .hero {
+        @apply block;
+
+        & div {
+            @apply w-full;
+        }
+
+        img {
+            @apply hidden;
+        }
+    }
+}
+
+@media (max-width: theme("screens.sm")) {
+    .hero {
+        @apply py-10 px-6 space-x-0;
+    }
+}

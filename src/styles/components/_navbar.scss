@@ -1,0 +1,37 @@
+nav {
+    @apply w-full bg-green-800 text-white flex space-x-16 px-8;
+
+    a {
+        @apply py-4 font-medium text-sm duration-300;
+    }
+
+    .logo {
+        @apply font-bold py-4;
+    }
+
+    .links {
+        @apply space-x-6 py-4;
+    }
+}
+
+@media (max-width: theme("screens.sm")) {
+    nav {
+        @apply block space-x-0 pb-4;
+
+        a {
+            @apply block;
+        }
+
+        .logo {
+            @apply pb-2;
+        }
+
+        .links {
+            @apply pt-2 space-x-0 space-y-2;
+
+            a {
+                @apply py-0;
+            }
+        }
+    }
+}
