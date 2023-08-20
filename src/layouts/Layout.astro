@@ -1,5 +1,7 @@
 ---
 import { SEO } from "astro-seo"
+import Footer from "../components/Footer.astro"
+import Navbar from "../components/Navbar.astro"
 import "../styles/app.scss"
 
 interface Props {
@@ -41,6 +43,8 @@ const {
         <title>{title}</title>
     </head>
     <body>
+        <Navbar />
         <slot />
+        <Footer />
     </body>
 </html>
