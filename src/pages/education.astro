@@ -1,0 +1,129 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Button from "../components/Button.astro"
+import CTA from "../components/CTA.astro"
+---
+
+<Layout title="Education" description="Messianic education">
+    <section class="hero">
+        <div class="w-2/3">
+            <h1>Education</h1>
+            <p>Passing on the torch to the next generation</p>
+        </div>
+        <div class="w-1/3">
+            <img
+                src="https://mhcdirectus.server.createfulpurpose.com/assets/8c0ace7f-5b52-4d65-baf5-17060423fc2a"
+            />
+        </div>
+    </section>
+    <div class="sections">
+        <section>
+            <div class="columns-2 text-lg">
+                <div>
+                    <CTA>
+                        <h2>Memory Club</h2>
+                        <p>Memory Club is XYZ</p>
+                    </CTA>
+                </div>
+                <div>
+                    <CTA>
+                        <h2>Torah-Integrated Learning</h2>
+                        <p>
+                            <em
+                                ><span
+                                    >Activities that bring Torah portions to
+                                    life, that integrate into homeschooling</span
+                                ></em
+                            >
+                        </p>
+                    </CTA>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="columns-2 text-lg">
+                <div>
+                    <CTA>
+                        <h2>Pinguni</h2>
+                        <p>Something</p>
+                        <Button
+                            href="https://pinguni.org"
+                            text="Visit Pinguni"
+                        />
+                    </CTA>
+                </div>
+                <div>
+                    <CTA>
+                        <h2>DCLH</h2>
+                        <p>Something</p>
+                        <Button
+                            href="https://dclearninghub.com"
+                            text="Visit DCLH"
+                        />
+                    </CTA>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>
+                This Week's Portion:
+                <span class="font-semibold">Bereishit</span>
+            </h2>
+            <div class="cards columns-3">
+                <a href="#!" class="card">
+                    <p class="eyebrow">Portion</p>
+                    <h3>Parashat Bereishit Guide</h3>
+                    <p class="description">
+                        Some long text explaning the resource and what it's for
+                        or something like that
+                    </p>
+                    <div class="tags">
+                        <div class="tag">
+                            <p>Category:</p>
+                            <p>Something</p>
+                        </div>
+                        <div class="tag">
+                            <p>Ages:</p>
+                            <p>Something</p>
+                        </div>
+                        <div class="tag">
+                            <p>Subbjects:</p>
+                            <p>Something</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <!-- <Cta @title="Our Philosophy">
+            <div class="columns-2">
+                <p>First half</p>
+                <p>Second half</p>
+            </div>
+            <a href="#!" class="button">Read More</a>
+        </Cta> -->
+        </section>
+
+        <section>
+            <h2>More Parashah Guides</h2>
+        </section>
+
+        <section>
+            <h2>Featured Activities</h2>
+        </section>
+
+        <!-- <section>
+            <div class="columns-2 gap-24">
+                <Cta @title="Pinguni">
+                    <p>Second half</p>
+                    <a href="#!" class="button">Read More</a>
+                </Cta>
+                <Cta @title="DCLH">
+                    <p>Second half</p>
+                    <a href="#!" class="button">Read More</a>
+                </Cta>
+            </div>
+        </section> -->
+    </div>
+</Layout>

@@ -1,0 +1,18 @@
+.columns-2,
+.columns-3 {
+    @apply grid;
+}
+
+.columns-2 {
+    @apply grid-cols-2 gap-8;
+}
+.columns-3 {
+    @apply grid-cols-3 gap-8;
+}
+
+@media (max-width: theme("screens.sm")) {
+    .columns-2,
+    .columns-3 {
+        @apply grid-cols-1;
+    }
+}

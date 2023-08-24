@@ -1,0 +1,23 @@
+footer {
+    @apply bg-green-800 text-white flex space-x-8 px-8 py-12;
+
+    & > div {
+        @apply w-1/3;
+    }
+
+    .footer-links {
+        a {
+            @apply block mb-2;
+        }
+    }
+}
+
+@media (max-width: theme("screens.sm")) {
+    footer {
+        @apply block py-10 space-x-0 space-y-8;
+
+        & > div {
+            @apply w-full;
+        }
+    }
+}
