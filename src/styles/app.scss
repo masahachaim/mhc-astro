@@ -22,10 +22,9 @@ body {
 
 section {
     @apply py-24 px-20;
-
-    &.dark {
-        @apply bg-slate-900 text-white;
-    }
+}
+.dark {
+    @apply bg-slate-900 text-white;
 }
 @media (max-width: theme("screens.sm")) {
     .sections {
@@ -47,7 +46,7 @@ h2 {
     @apply text-4xl leading-relaxed mb-8;
 }
 h3 {
-    @apply text-2xl;
+    @apply text-2xl font-bold mb-3;
 }
 @media (max-width: theme("screens.sm")) {
     h1 {
@@ -75,20 +74,28 @@ p {
 
 img {
     @apply rounded-md;
+
+    &.img-tall {
+        @apply h-96 object-cover;
+    }
+}
+@media (max-width: theme("screens.sm")) {
+    img {
+        &.img-tall {
+            @apply h-64;
+        }
+    }
 }
 
 // ==========================================
 // Landing page
 // ==========================================
 
-.landing-page-section {
+.page-section {
     @apply leading-relaxed;
 
     h2 {
         @apply font-semibold;
-    }
-    h3 {
-        @apply font-bold mb-3;
     }
 
     img {
@@ -104,7 +111,7 @@ img {
     }
 }
 @media (max-width: theme("screens.sm")) {
-    .landing-page-section {
+    .page-section {
         .columns-2 {
             @apply gap-8;
         }
