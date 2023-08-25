@@ -1,0 +1,14 @@
+.separator {
+    @apply mb-8 flex items-center text-center text-slate-600 uppercase text-xs font-semibold tracking-wider;
+}
+.separator::before,
+.separator::after {
+    @apply flex-1 border-b-2 border-slate-200;
+    content: "";
+}
+.separator:not(:empty)::before {
+    @apply mr-2;
+}
+.separator:not(:empty)::after {
+    @apply ml-2;
+}

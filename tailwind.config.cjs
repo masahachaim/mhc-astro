@@ -4,10 +4,10 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                display: "",
-                regular: "",
+                display: "'Nunito Sans', sans-serif",
+                regular: "'Nunito Sans', sans-serif",
             },
         },
     },
     plugins: [],
-};
+}

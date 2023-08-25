@@ -1,5 +1,5 @@
 .button {
-    @apply py-2 px-4 bg-green-800 text-white font-medium rounded-md duration-300;
+    @apply py-2 px-4 bg-green-800 text-white text-base font-semibold rounded-md duration-300;
 
     &:hover {
         @apply bg-green-900;
