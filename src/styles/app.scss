@@ -22,6 +22,10 @@ body {
 
 section {
     @apply py-24 px-20;
+
+    &.dark {
+        @apply bg-slate-900 text-white;
+    }
 }
 @media (max-width: theme("screens.sm")) {
     .sections {
