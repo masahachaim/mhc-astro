@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700&display=swap");
+
 @import "components/buttons";
 @import "components/cards";
 @import "components/columns";
@@ -9,20 +11,24 @@
 @import "components/footer";
 @import "components/hero";
 @import "components/navbar";
+@import "components/separator";
 
-.sections {
-    @apply space-y-28 py-20;
-
-    section {
-        @apply py-0;
-    }
+html {
+    @apply scroll-smooth;
 }
+body {
+    @apply font-regular bg-slate-50;
+}
+
 section {
-    @apply py-20 px-20;
+    @apply py-24 px-20;
+}
+.dark {
+    @apply bg-slate-900 text-white;
 }
 @media (max-width: theme("screens.sm")) {
     .sections {
-        @apply space-y-16 py-12;
+        @apply space-y-16 py-0;
     }
     section {
         @apply py-10 px-6;
@@ -34,10 +40,13 @@ section {
 // ==========================================
 
 h1 {
-    @apply text-5xl leading-relaxed mb-8;
+    @apply text-5xl leading-snug mb-8;
 }
 h2 {
     @apply text-4xl leading-relaxed mb-8;
+}
+h3 {
+    @apply text-2xl font-bold mb-3;
 }
 @media (max-width: theme("screens.sm")) {
     h1 {
@@ -49,7 +58,62 @@ h2 {
 }
 
 p {
+    @apply mb-3;
     &.title {
-        @apply font-semibold mb-2;
+        @apply font-bold mb-2;
+    }
+}
+
+.skinny-text {
+    max-width: 300px;
+}
+
+// ==========================================
+// Other Elements
+// ==========================================
+
+img {
+    @apply rounded-md;
+
+    &.img-tall {
+        @apply h-96 object-cover;
+    }
+}
+@media (max-width: theme("screens.sm")) {
+    img {
+        &.img-tall {
+            @apply h-64;
+        }
+    }
+}
+
+// ==========================================
+// Landing page
+// ==========================================
+
+.page-section {
+    @apply leading-relaxed;
+
+    h2 {
+        @apply font-semibold;
+    }
+
+    img {
+        @apply w-full object-cover;
+        height: 32rem;
+    }
+
+    .columns-2 {
+        @apply gap-20;
+    }
+    .skinny-text {
+        @apply items-center;
+    }
+}
+@media (max-width: theme("screens.sm")) {
+    .page-section {
+        .columns-2 {
+            @apply gap-8;
+        }
     }
 }

@@ -1,73 +1,98 @@
 ---
 import Layout from "../layouts/Layout.astro"
 import Button from "../components/Button.astro"
-import CTA from "../components/CTA.astro"
 ---
 
 <Layout
     title="Home"
-    description="Building a Messianic culture for our families and the next generation"
+    description="Building a Messianic legacy for our families and the next generation"
 >
     <section class="hero">
         <div class="w-2/3">
-            <h1>Building a Messianic culture for the next generation</h1>
-            <Button text="Mission & Vision" href="/about" target="_self" />
+            <h1>Building a Messianic legacy for the next generation</h1>
+            <Button text="Our Mission" href="#mission" target="_self" />
         </div>
         <div class="w-1/3">
             <img
-                src="https://mhcdirectus.server.createfulpurpose.com/assets/8c0ace7f-5b52-4d65-baf5-17060423fc2a"
+                class="img-tall"
+                src="https://cdn.pixabay.com/photo/2017/07/08/21/30/family-2485714_1280.jpg"
+                alt="Family walking in nature"
             />
         </div>
     </section>
 
-    <div class="sections">
-        <section>
-            <CTA>
+    <section class="text-center pt-10">
+        <div class="separator">Sister websites</div>
+        <div class="flex justify-center">
+            <a href="#hdhb">
+                <img
+                    class="h-24"
+                    src="https://hdhb.masahachaim.org/wp-content/uploads/2023/08/HDHB_Banner_Logo-removebg-preview.png"
+                    alt="HaDor HaBa logo"
+                />
+            </a>
+        </div>
+    </section>
+
+    <section class="page-section dark">
+        <div class="columns-2 items-center">
+            <div>
+                <img
+                    src="https://cdn.pixabay.com/photo/2020/06/17/17/01/plant-5310423_1280.jpg"
+                />
+            </div>
+            <div>
                 <h2>What is Masa HaChaim?</h2>
                 <p>
                     <em>Masa haChaim</em> is a Hebrew phrase that means "journey
-                    of life".
+                    of life", referring to the never-ending process of growing in
+                    our faith.
                 </p>
-            </CTA>
-        </section>
-        <section>
-            <h2>Integrating values and beliefs into everyday life</h2>
-            <div class="columns-3 text-lg">
-                <div>
-                    <p>
-                        <span
-                            >Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua.</span
-                        >
-                    </p>
-                </div>
-                <div>
-                    <p>
-                        <span
-                            >Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat.</span
-                        >
-                    </p>
-                </div>
-                <div>
-                    <p>
-                        <span
-                            >Excepteur sint occaecat cupidatat non proident,
-                            sunt in culpa qui officia deserunt mollit anim id
-                            est laborum.</span
-                        >
-                    </p>
-                </div>
+                <p>
+                    We are committed to building a strong and vibrant Messianic
+                    community for the next generation. We seek to provide
+                    resources that encourage and strengthen families,
+                    congregations, children, youth, and more.
+                </p>
             </div>
-        </section>
-        <section>
-            <CTA>
-                <h2>HaDor HaBa</h2>
-                <p>Website for Messianic youth.</p>
-                <Button text="Visit Here" href="https://hdhb.masahachaim.org" />
-            </CTA>
-        </section>
-    </div>
+        </div>
+    </section>
+
+    <section id="mission" class="page-section">
+        <div class="columns-2">
+            <div>
+                <h3>Families</h3>
+                <p>
+                    The passing on of faith from one generation to the next must
+                    begin in the family. Masa HaChaim provides a variety of
+                    resources for family discipleship, including discussion
+                    guides for Torah portions and homeschool curriculum
+                    supplements.
+                </p>
+            </div>
+            <div>
+                <h3>Youth</h3>
+                <p>
+                    Young people are always the future of any faith and
+                    movement. We desire to encourage our youth and young adults
+                    to discover the Bible for themselves through various
+                    activities, including Memory Club and the Bible Reading
+                    Challenge.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="hdhb" class="text-center dark border-b border-slate-600">
+        <h2 class="">HaDor HaBa</h2>
+        <div class="skinny-text mx-auto">
+            <p class="mb-8">
+                Young people are the future of Messianic Judaism. Our sister
+                website, HaDor HaBa, is dedicated to providing them with the
+                tools and resources they need to carry on the torch of our
+                faith.
+            </p>
+            <Button text="Visit Here" href="https://hdhb.masahachaim.org" />
+        </div>
+    </section>
 </Layout>

@@ -1,12 +1,16 @@
 nav {
-    @apply w-full bg-green-800 text-white flex space-x-16 px-8;
+    @apply w-full bg-slate-900 text-white flex space-x-16 px-8;
 
     a {
-        @apply py-4 font-medium text-sm duration-300;
+        @apply py-4 font-semibold text-sm duration-300;
     }
 
     .logo {
-        @apply font-bold py-4;
+        @apply py-4;
+
+        a {
+            @apply font-bold;
+        }
     }
 
     .links {

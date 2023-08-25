@@ -1,3 +1,11 @@
-<div class="cta">
+---
+interface Props {
+    addClasses?: string
+}
+
+const { addClasses } = Astro.props
+---
+
+<div class={`${addClasses} cta`}>
     <slot />
 </div>
