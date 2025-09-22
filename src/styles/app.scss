@@ -110,6 +110,13 @@ img {
         @apply items-center;
     }
 }
+.survey {
+    @apply max-w-screen-lg mx-auto;
+
+    h1 {
+        @apply pl-1;
+    }
+}
 @media (max-width: theme("screens.sm")) {
     .page-section {
         .columns-2 {
