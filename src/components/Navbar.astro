@@ -2,11 +2,16 @@
 import NavLinks from "./NavLinks.astro"
 ---
 
-<nav>
-    <div class="logo">
-        <a href="/">MHC</a>
-    </div>
-    <div class="links">
-        <NavLinks />
-    </div>
+<nav
+	class="bg-dark text-light rounded-b-2xl p-4 flex items-center justify-between"
+>
+	<a
+		href="/"
+		class="font-display font-bold"
+	>
+		Masa HaChaim
+	</a>
+	<div class="flex gap-4 font-semibold">
+		<NavLinks />
+	</div>
 </nav>
