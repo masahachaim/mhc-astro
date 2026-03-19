@@ -15,4 +15,33 @@
     body {
         @apply font-body font-normal;
     }
+
+    h1 {
+        @apply font-display text-7xl;
+    }
+}
+
+@layer components {
+    .button-wrapper {
+        @apply flex gap-4;
+    }
+    .button {
+        @apply py-3 px-5 uppercase font-semibold rounded-2xl border border-dark duration-300 overflow-hidden relative;
+    }
+    .button--primary {
+        @apply bg-dark text-light;
+    }
+    .button--secondary {
+        @apply bg-transparent;
+        &:before {
+            @apply absolute top-0 left-0 w-0 h-full bg-dark transition-all duration-300 -z-10;
+            content: "";
+        }
+        &:hover {
+            @apply text-light;
+            &:before {
+                @apply w-full;
+            }
+        }
+    }
 }
