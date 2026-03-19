@@ -2,7 +2,7 @@
 import { SEO } from "astro-seo"
 import Footer from "../components/Footer.astro"
 import Navbar from "../components/Navbar.astro"
-import "../styles/app.scss"
+import "@/styles/global.css"
 
 interface Props {
 	title: string
@@ -51,6 +51,12 @@ const {
 		/>
 
 		<title>{title}</title>
+
+		<!-- Fonts -->
+		<link
+			rel="stylesheet"
+			href="https://use.typekit.net/cpd3rot.css"
+		/>
 	</head>
 	<body>
 		<Navbar />
