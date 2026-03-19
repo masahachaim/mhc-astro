@@ -13,11 +13,11 @@
 
 @layer base {
     body {
-        @apply font-body font-normal;
+        @apply font-body font-normal leading-normal;
     }
 
     h1 {
-        @apply font-display text-7xl;
+        @apply font-display text-7xl leading-tight;
     }
 }
 
