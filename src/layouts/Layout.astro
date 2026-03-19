@@ -5,46 +5,56 @@ import Navbar from "../components/Navbar.astro"
 import "../styles/app.scss"
 
 interface Props {
-    title: string
-    description: string
-    og_title?: string
-    og_type?: string
-    og_image?: string
+	title: string
+	description: string
+	og_title?: string
+	og_type?: string
+	og_image?: string
 }
 
 const {
-    title,
-    description,
-    og_title = title,
-    og_type = "website",
-    og_image = "./logo.png",
+	title,
+	description,
+	og_title = title,
+	og_type = "website",
+	og_image = "./logo.png",
 } = Astro.props
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width" />
-        <link rel="icon" type="image/png" href="/favicon.png" />
-        <meta name="generator" content={Astro.generator} />
-        <SEO
-            title={title + " | Masa HaChaim"}
-            description={description}
-            openGraph={{
-                basic: {
-                    title: og_title + " | Masa HaChaim",
-                    type: og_type,
-                    image: og_image,
-                },
-            }}
-        />
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			href="/favicon.png"
+		/>
+		<meta
+			name="generator"
+			content={Astro.generator}
+		/>
+		<SEO
+			title={title + " | Masa HaChaim"}
+			description={description}
+			openGraph={{
+				basic: {
+					title: og_title + " | Masa HaChaim",
+					type: og_type,
+					image: og_image,
+				},
+			}}
+		/>
 
-        <title>{title}</title>
-    </head>
-    <body>
-        <Navbar />
-        <slot />
-        <Footer />
-    </body>
+		<title>{title}</title>
+	</head>
+	<body>
+		<Navbar />
+		<slot />
+		<Footer />
+	</body>
 </html>
