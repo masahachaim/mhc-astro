@@ -1,12 +1,32 @@
 ---
 import Layout from "@/layouts/Layout.astro"
+import { Icon } from "astro-icon/components"
+
+const supports = [
+	{
+		title: "Youth",
+		icon: "material-symbols:child-hat-rounded",
+	},
+	{
+		title: "Young Adults",
+		icon: "material-symbols:person-raised-hand-rounded",
+	},
+	{
+		title: "Families",
+		icon: "material-symbols:family-restroom-rounded",
+	},
+	{
+		title: "Communities",
+		icon: "material-symbols:synagogue-rounded",
+	},
+]
 ---
 
 <Layout
 	title="Home"
 	description="Messianic resources for building strong families and communities."
 >
-	<section class="px-6 py-24">
+	<section class="px-6 pt-24 pb-32">
 		<h1 class="mb-10">
 			Messianic resources for building strong <strong>families</strong> and
 			<strong>communities</strong>.
@@ -98,6 +118,23 @@ import Layout from "@/layouts/Layout.astro"
 					congregations, children, youth, and more.
 				</p>
 			</div>
+		</div>
+	</section>
+
+	<section class="px-6 py-24">
+		<h2>Supporting Our...</h2>
+		<div class="grid grid-cols-4 gap-4">
+			{
+				supports.map((sup) => (
+					<div class="rounded-2xl border border-dark flex flex-col items-center p-12">
+						<Icon
+							name={sup.icon}
+							class="text-6xl mb-3"
+						/>
+						<h3 class="mb-0">{sup.title}</h3>
+					</div>
+				))
+			}
 		</div>
 	</section>
 

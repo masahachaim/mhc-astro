@@ -21,7 +21,11 @@
     }
 
     h2 {
-        @apply font-display text-5xl leading-tight mb-8;
+        @apply font-display text-5xl leading-tight mb-10;
+    }
+
+    h3 {
+        @apply text-xl font-semibold mb-4;
     }
 
     p {
