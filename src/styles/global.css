@@ -5,6 +5,7 @@
     --font-body: ainslie-sans, sans-serif;
 
     --color-dark: #373d20;
+    --color-medium: #717744;
     --color-light: #eff1ed;
 }
 /* 
@@ -34,6 +35,10 @@
 }
 
 @layer components {
+    .eyebrow {
+        @apply italic uppercase tracking-wide mb-0;
+    }
+
     .button-wrapper {
         @apply flex gap-4;
     }
