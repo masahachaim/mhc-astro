@@ -2,18 +2,25 @@
 import NavLinks from "./NavLinks.astro"
 ---
 
-<footer>
-    <div class="footer-about">
-        <p class="title">Masa HaChaim</p>
-        <p class="description">
-            Building a Messianic legacy for the next generation.
-        </p>
-    </div>
-    <div class="footer-subscribe">
-        <p class="title">Subscribe</p>
-        <p class="description"><em>Coming soon.</em></p>
-    </div>
-    <div class="footer-links">
-        <NavLinks />
-    </div>
+<footer
+	class="bg-dark text-light rounded-t-2xl p-6 flex items-center justify-between"
+>
+	<div class="footer-about">
+		<a
+			href="/"
+			class="font-display font-bold text-xl mb-0.5 block"
+		>
+			Masa HaChaim
+		</a>
+		<p class="text-sm">
+			Messianic resources for building strong families and congregations.
+		</p>
+	</div>
+	<!-- <div class="footer-subscribe">
+		<p class="title">Subscribe</p>
+		<p class="description"><em>Coming soon.</em></p>
+	</div> -->
+	<div class="flex gap-4 font-semibold">
+		<NavLinks />
+	</div>
 </footer>
