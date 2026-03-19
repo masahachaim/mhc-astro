@@ -30,7 +30,16 @@
     }
 
     p {
-        @apply mb-3;
+        @apply mb-4;
+    }
+
+    form {
+        input {
+            @apply border border-dark rounded-2xl py-3 px-5 w-full;
+            &::placeholder {
+                @apply text-medium uppercase;
+            }
+        }
     }
 }
 
@@ -43,7 +52,7 @@
         @apply flex gap-4;
     }
     .button {
-        @apply py-3 px-5 uppercase font-semibold rounded-2xl border border-dark duration-300 overflow-hidden relative;
+        @apply cursor-pointer py-3 px-5 uppercase font-semibold rounded-2xl border border-dark duration-300 overflow-hidden relative;
     }
     .button--primary {
         @apply bg-dark text-light;
