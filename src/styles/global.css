@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+@theme {
+    --font-display: amandine, serif;
+    --font-body: ainslie-sans, sans-serif;
+
+    --color-dark: #373d20;
+    --color-light: #eff1ed;
+}
+/* 
+ * Rounded: 2xl (16px)
+ */
+
+@layer base {
+    body {
+        @apply font-body font-normal;
+    }
+}
