@@ -34,6 +34,10 @@
         @apply mb-4;
     }
 
+    a {
+        @apply underline;
+    }
+
     form {
         input,
         textarea {
@@ -54,7 +58,7 @@
         @apply flex gap-4;
     }
     .button {
-        @apply cursor-pointer py-3 px-5 uppercase font-semibold rounded-2xl border border-dark duration-300 overflow-hidden relative;
+        @apply cursor-pointer no-underline py-3 px-5 uppercase font-semibold rounded-2xl border border-dark duration-300 overflow-hidden relative;
     }
     .button--primary {
         @apply bg-dark text-light;
@@ -62,7 +66,7 @@
     .button--secondary {
         @apply bg-transparent;
         &:before {
-            @apply absolute top-0 left-0 w-0 h-full bg-dark transition-all duration-300 -z-10;
+            @apply absolute top-0 left-0 w-0 h-full rounded-2xl bg-dark transition-all duration-300 -z-10;
             content: "";
         }
         &:hover {

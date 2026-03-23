@@ -40,7 +40,7 @@ const books = [
 		parashot: [
 			{ name: "Vayikra", status: "notcreated" },
 			{ name: "Tzav", status: "notcreated" },
-			{ name: "Shemini", status: "current" },
+			{ name: "Shemini", status: "current", slug: "shemini" },
 			{ name: "Tazria", status: "notcreated" },
 			{ name: "Metzora", status: "notcreated" },
 			{ name: "Achrei Mot", status: "notcreated" },
@@ -160,8 +160,12 @@ const books = [
 						</h3>
 						{book.parashot.map((parasha) => (
 							<a
-								href="#!"
-								class={`py-2 font-semibold hover:bg-light block ${
+								href={
+									parasha.slug
+										? `/education/parashot/${parasha.slug}`
+										: "#!"
+								}
+								class={`no-underline py-2 font-semibold hover:bg-light block ${
 									parasha.status === "notcreated"
 										? "text-medium cursor-not-allowed hover:bg-white"
 										: parasha.status === "current"
