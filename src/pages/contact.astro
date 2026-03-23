@@ -1,0 +1,47 @@
+---
+import Layout from "@/layouts/Layout.astro"
+---
+
+<Layout
+	title="Contact"
+	description="Get in touch with us."
+>
+	<section class="px-6 pt-24 pb-32 max-w-5xl mx-auto text-center">
+		<h1 class="mb-5">Contact</h1>
+		<p>
+			Got a question, suggestion, or concern? Feel free to send us an
+			email at <a
+				href="mailto:contact@masahachaim.org"
+				class="underline"
+				>contact@masahachaim.org</a
+			>, or use the form below.
+		</p>
+		<form class="mt-6">
+			<div class="flex gap-2 mb-2">
+				<input
+					type="text"
+					name="name"
+					placeholder="Name*"
+					required
+				/>
+				<input
+					type="email"
+					name="email"
+					placeholder="Email*"
+					required
+				/>
+			</div>
+			<textarea
+				name="message"
+				placeholder="Message*"
+				class="min-h-40"
+				required
+			></textarea>
+			<button
+				type="submit"
+				class="button button--primary w-full"
+				>Send Message</button
+			>
+		</form>
+	</section>
+</Layout>

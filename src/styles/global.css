@@ -34,7 +34,8 @@
     }
 
     form {
-        input {
+        input,
+        textarea {
             @apply border border-dark rounded-2xl py-3 px-5 w-full;
             &::placeholder {
                 @apply text-medium uppercase;
