@@ -2,7 +2,7 @@
 import { SEO } from "astro-seo"
 import Footer from "@/components/Footer.astro"
 import Navbar from "@/components/Navbar.astro"
-import Posthog from "@/components/Posthog.astro"
+import PostHog from "@/components/PostHog.astro"
 import "@/styles/global.css"
 
 interface Props {
@@ -60,7 +60,7 @@ const {
 		/>
 
 		<!-- Analytics -->
-		<Posthog />
+		<PostHog />
 	</head>
 	<body>
 		<Navbar />
