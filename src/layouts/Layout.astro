@@ -2,6 +2,7 @@
 import { SEO } from "astro-seo"
 import Footer from "@/components/Footer.astro"
 import Navbar from "@/components/Navbar.astro"
+import Posthog from "@/components/Posthog.astro"
 import "@/styles/global.css"
 
 interface Props {
@@ -57,6 +58,9 @@ const {
 			rel="stylesheet"
 			href="https://use.typekit.net/cpd3rot.css"
 		/>
+
+		<!-- Analytics -->
+		<Posthog />
 	</head>
 	<body>
 		<Navbar />
