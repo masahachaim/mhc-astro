@@ -1,4 +1,5 @@
 ---
+import SubscribeForm from "@/components/SubscribeForm"
 import Layout from "@/layouts/Layout.astro"
 ---
 
@@ -87,32 +88,6 @@ import Layout from "@/layouts/Layout.astro"
 	</section>
 
 	<section class="py-32 bg-light rounded-t-2xl">
-		<div class="mx-auto w-full max-w-md px-6">
-			<h2 class="text-center mb-4">Get Updates</h2>
-			<p class="text-center">
-				We're always actively working to create more materials to
-				support the Messianic community. Subscribe for resources and
-				news about our latest projects!
-			</p>
-			<form class="space-y-2">
-				<input
-					type="text"
-					name="name"
-					placeholder="Name*"
-					required
-				/>
-				<input
-					type="email"
-					name="email"
-					placeholder="Email*"
-					required
-				/>
-				<button
-					type="submit"
-					class="button button--primary w-full"
-					>Subscribe</button
-				>
-			</form>
-		</div>
+		<SubscribeForm client:load />
 	</section>
 </Layout>
