@@ -57,7 +57,46 @@
 			(e.__SV = 1))
 	})(document, window.posthog || [])
 	posthog.init("phc_dTyxhChCFsFVPTvH9NZvGjiIiFuKxhOXbTuHemvr4ly", {
+		cookieless_mode: "on_reject",
 		api_host: "https://us.i.posthog.com",
 		defaults: "2026-01-30",
 	})
+
+	const cookieBanner = document.getElementById("cookie-banner")
+	if (posthog.get_explicit_consent_status() === "pending")
+		cookieBanner.style.display = "block"
+
+	function handleCookieConsent(consent) {
+		if (consent) {
+			posthog.opt_in_capturing()
+		} else {
+			posthog.opt_out_capturing()
+		}
+	}
+	document.getElementById("accept-btn")?.addEventListener("click", () => {
+		handleCookieConsent(true)
+	})
+	document.getElementById("decline-btn")?.addEventListener("click", () => {
+		handleCookieConsent(false)
+	})
 </script>
+
+<div
+	id="cookie-banner"
+	class="hidden fixed bg-white border border-dark rounded-2xl max-w-md bottom-6 right-6 shadow-xl p-6 z-50"
+>
+	<p>
+		We use tracking cookies to understand how you use our website and help
+		us improve it. Please accept cookies to help us improve.
+	</p>
+	<button
+		id="accept-btn"
+		class="button button--primary text-xs py-2 px-4"
+		>Accept cookies</button
+	>
+	<button
+		id="decline-btn"
+		class="button button--secondary text-xs py-2 px-4"
+		>Decline cookies</button
+	>
+</div>
