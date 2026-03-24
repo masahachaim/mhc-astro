@@ -12,6 +12,6 @@ export default defineConfig({
         plugins: [tailwindcss()],
     },
     integrations: [icon(), react()],
-    adapter: netlify(),
+    adapter: netlify({ middlewareMode: "edge" }),
     output: "server",
 })
