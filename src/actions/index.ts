@@ -11,7 +11,7 @@ export const server = {
         }),
         handler: async (input) => {
             const client = new BrevoClient({
-                apiKey: import.meta.env.BREVO_API_KEY,
+                apiKey: process.env.BREVO_API_KEY!,
             })
             const res = await client.contacts.createContact({
                 email: input.email,
