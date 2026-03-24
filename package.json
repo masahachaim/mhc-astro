@@ -10,6 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@getbrevo/brevo": "^5.0.1",
     "@iconify-json/material-symbols": "^1.2.63",
     "@tailwindcss/vite": "^4.2.2",
     "astro": "^6.0.6",
