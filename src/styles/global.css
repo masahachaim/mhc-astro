@@ -66,6 +66,9 @@
     }
     .button--primary {
         @apply bg-dark text-light;
+        &:disabled {
+            @apply opacity-50 cursor-not-allowed;
+        }
     }
     .button--secondary {
         @apply bg-transparent;

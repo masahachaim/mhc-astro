@@ -25,7 +25,7 @@ export default function SubscribeForm() {
                     Thank you for subscribing!
                 </p>
             ) : (
-                <form className="space-y-2" action={action}>
+                <form className="space-y-2 mb-3" action={action}>
                     <input
                         type="text"
                         name="firstname"
