@@ -7,7 +7,7 @@ export const server = {
         accept: "form",
         input: z.object({
             firstname: z.string().min(1),
-            email: z.string().email(),
+            email: z.email(),
         }),
         handler: async (input) => {
             const client = new BrevoClient({
