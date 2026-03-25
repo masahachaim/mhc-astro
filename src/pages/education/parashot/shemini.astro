@@ -7,10 +7,12 @@ import Layout from "@/layouts/Layout.astro"
 	title="Parashat Shemini"
 	description="Educational resources for Parashat Shemini."
 >
-	<section class="pt-24 pb-32">
-		<div class="px-6 flex justify-between items-start">
+	<section class="pt-16 pb-24 sm:pt-24 sm:pb-32">
+		<div
+			class="px-6 flex flex-col-reverse sm:flex-row sm:justify-between items-start"
+		>
 			<h1 class="mb-10">Parashat Shemini</h1>
-			<div>
+			<div class="mb-6 sm:mb-0">
 				<a href="/">Home</a> / <a href="/education"
 					>Torah-Based Education</a
 				>
@@ -32,7 +34,7 @@ import Layout from "@/layouts/Layout.astro"
 		</div>
 		<!-- <p class="eyebrow">Writing Prompts</p> -->
 		<!-- <h2>Parashat Tzav</h2> -->
-		<div class="grid grid-cols-3 gap-4">
+		<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
 			<div class="rounded-2xl p-6 bg-white">
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -75,11 +77,11 @@ import Layout from "@/layouts/Layout.astro"
 		</div> -->
 	</section>
 
-	<section class="px-6 py-32 text-center">
+	<section class="px-6 py-24 sm:py-32 text-center">
 		<p>More content coming soon!</p>
 	</section>
 
-	<section class="px-6 py-32 text-center">
+	<section class="px-6 py-24 sm:py-32 text-center">
 		<a
 			href="/education"
 			class="button button--secondary"
@@ -87,7 +89,7 @@ import Layout from "@/layouts/Layout.astro"
 		>
 	</section>
 
-	<section class="py-32 bg-light rounded-t-2xl">
+	<section class="py-24 sm:py-32 bg-light rounded-t-2xl">
 		<SubscribeForm client:load />
 	</section>
 </Layout>

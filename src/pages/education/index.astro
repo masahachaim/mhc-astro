@@ -89,7 +89,7 @@ const books = [
 	title="Torah-Based Education"
 	description="Educational resources based on the Torah for Messianic families, homeschoolers, and communities."
 >
-	<section class="pt-24 pb-32">
+	<section class="pt-16 pb-24 sm:pt-24 sm:pb-32">
 		<div class="px-6"><h1 class="mb-10">Torah-Based Education</h1></div>
 		<div class="flex items-center pr-6">
 			<hr class="border border-dark w-36" />
@@ -107,7 +107,7 @@ const books = [
 		</div>
 		<!-- <p class="eyebrow">Writing Prompts</p> -->
 		<h2>Parashat Tzav</h2>
-		<div class="grid grid-cols-3 gap-4">
+		<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
 			<div class="rounded-2xl p-6 bg-white">
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -150,9 +150,9 @@ const books = [
 		</div> -->
 	</section>
 
-	<section class="px-6 py-32">
+	<section class="px-6 py-24 sm:py-32">
 		<h2>All Parashot</h2>
-		<div class="grid grid-cols-5 gap-4 text-center">
+		<div class="grid grid-cols-2 sm:grid-cols-5 gap-4 text-center">
 			{
 				books.map((book) => (
 					<div class="border border-medium rounded-2xl overflow-hidden">
@@ -183,7 +183,7 @@ const books = [
 		</div>
 	</section>
 
-	<section class="py-32 bg-light rounded-t-2xl">
+	<section class="py-24 sm:py-32 bg-light rounded-t-2xl">
 		<SubscribeForm client:load />
 	</section>
 </Layout>

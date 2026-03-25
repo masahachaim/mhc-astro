@@ -23,11 +23,11 @@
     }
 
     h1 {
-        @apply font-display text-7xl leading-tight;
+        @apply font-display text-6xl sm:text-7xl leading-tight;
     }
 
     h2 {
-        @apply font-display text-5xl leading-tight mb-10;
+        @apply font-display text-4xl sm:text-5xl leading-tight mb-6 sm:mb-10;
     }
 
     h3 {
@@ -59,10 +59,10 @@
     }
 
     .button-wrapper {
-        @apply flex gap-4;
+        @apply flex gap-2 sm:gap-4;
     }
     .button {
-        @apply cursor-pointer no-underline py-3 px-5 uppercase font-semibold rounded-2xl border border-dark duration-300 overflow-hidden relative;
+        @apply cursor-pointer no-underline py-2 px-4 sm:py-3 sm:px-5 uppercase font-semibold rounded-2xl border border-dark duration-300 overflow-hidden relative;
     }
     .button--primary {
         @apply bg-dark text-light;
