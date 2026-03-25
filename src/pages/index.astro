@@ -21,6 +21,22 @@ const supports = [
 		icon: "material-symbols:synagogue-rounded",
 	},
 ]
+
+const products = [
+	{
+		title: "Messianic Planner 2026 (5786-5787, January-December)",
+		description:
+			"A beautiful, minimal 12-month Messianic planner to help you stay organized and focused on the Word.",
+		image: "planner.webp",
+		href: "https://masahachaim.etsy.com/listing/4367945847",
+	},
+	{
+		title: "Im Eshkachech Yerushalyaim (Psalm 137:5) Bookmark",
+		description: `Featuring Psalm 137:5 in Hebrew and English: "If I forget thee, O Jerusalem, let my right hand forget her cunning."`,
+		image: "bookmark.webp",
+		href: "https://masahachaim.etsy.com/listing/4367947956",
+	},
+]
 ---
 
 <Layout
@@ -248,4 +264,35 @@ const supports = [
 			/>
 		</div>
 	</section> -->
+
+	<section class="px-6 pt-24 pb-32 bg-light">
+		<h2>Products</h2>
+		<div class="grid grid-cols-2 gap-6">
+			{
+				products.map((product) => (
+					<a
+						href={product.href}
+						target="_blank"
+						class="relative block no-underline bg-white rounded-2xl overflow-hidden shadow-lg duration-300 hover:shadow-xl"
+					>
+						<img
+							src={product.image}
+							class="w-full object-cover h-96"
+						/>
+						<div class="p-6">
+							<h3>{product.title}</h3>
+							<p>{product.description}</p>
+							<p class="uppercase font-semibold mb-0 flex gap-1">
+								<span>View</span>
+								<Icon
+									name="material-symbols:arrow-right-alt-rounded"
+									class="text-xl mt-[0.5px]"
+								/>
+							</p>
+						</div>
+					</a>
+				))
+			}
+		</div>
+	</section>
 </Layout>
