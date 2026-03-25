@@ -2,7 +2,6 @@
 import { SEO } from "astro-seo"
 import Footer from "@/components/Footer.astro"
 import Navbar from "@/components/Navbar.astro"
-import PostHog from "@/components/PostHog.astro"
 import "@/styles/global.css"
 
 interface Props {
@@ -60,7 +59,12 @@ const {
 		/>
 
 		<!-- Analytics -->
-		<PostHog />
+		<script
+			is:inline
+			src="https://rybbit.coolify.cathzchen.com/api/script.js"
+			data-site-id="d6d3f6d17e64"
+			defer
+		></script>
 	</head>
 	<body>
 		<Navbar />
