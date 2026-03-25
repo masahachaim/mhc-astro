@@ -61,12 +61,17 @@ const {
 		/>
 
 		<!-- Analytics -->
-		<script
-			is:inline
-			src="https://rybbit.coolify.cathzchen.com/api/script.js"
-			data-site-id="d6d3f6d17e64"
-			defer
-		></script>
+		{
+			(!import.meta.env.PUBLIC_ENV ||
+				import.meta.env.PUBLIC_ENV != "local") && (
+				<script
+					is:inline
+					src="https://rybbit.coolify.cathzchen.com/api/script.js"
+					data-site-id="d6d3f6d17e64"
+					defer
+				/>
+			)
+		}
 	</head>
 	<body>
 		<Navbar />
