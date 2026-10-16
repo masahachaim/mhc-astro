@@ -4,17 +4,24 @@ import NavLinks from "./NavLinks.astro"
 ---
 
 <footer
-	class="bg-dark text-light rounded-t-2xl p-6 sm:flex items-center justify-between"
+	class="bg-dark text-light rounded-t-2xl p-6 sm:flex items-start justify-between"
 >
 	<div class="mb-3 sm:mb-0">
 		<Logo />
-		<p class="text-sm mt-1 mb-0">
+		<p class="text-sm mt-1">
 			Messianic resources for building strong families and congregations.
 		</p>
+		<a
+			href="/privacy-policy"
+			class="text-xs text-right"
+			>Privacy Policy</a
+		>
 	</div>
 	<!-- <div class="footer-subscribe">
 		<p class="title">Subscribe</p>
 		<p class="description"><em>Coming soon.</em></p>
 	</div> -->
-	<NavLinks />
+	<div>
+		<NavLinks />
+	</div>
 </footer>

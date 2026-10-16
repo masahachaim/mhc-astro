@@ -42,6 +42,14 @@
         @apply underline;
     }
 
+    ul {
+        @apply list-disc pl-6 mb-4;
+
+        li {
+            @apply mb-2;
+        }
+    }
+
     form {
         input,
         textarea {
@@ -49,6 +57,28 @@
             &::placeholder {
                 @apply text-medium uppercase;
             }
+        }
+    }
+
+    table {
+        @apply text-left mb-4;
+        tr {
+            @apply border-b border-dark;
+        }
+        th {
+            @apply pb-3;
+        }
+        td {
+            @apply align-text-top pr-4 py-3;
+        }
+    }
+
+    article {
+        h2 {
+            @apply mt-8 sm:mb-6;
+        }
+        h3 {
+            @apply mt-6;
         }
     }
 }
